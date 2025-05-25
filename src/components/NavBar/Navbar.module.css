@@ -1,0 +1,142 @@
+.header {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.topBar {
+  background-color: #2e8b75;
+  color: #fff;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  flex-wrap: wrap;
+}
+
+.topBar .left,
+.topBar .center,
+.topBar .right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.topBar .email {
+  margin-left: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #1e1e2f;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  color: #5b5b5b;
+}
+
+.navLinks li {
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #00aaff;
+  font-size: 0.875rem;
+}
+
+.actions .action {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.actions .cart,
+.actions .wishlist {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  position: relative;
+}
+
+.actions .cart span,
+.actions .wishlist span {
+  font-size: 0.75rem;
+  color: #00aaff;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.showMenu {
+  display: flex !important;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    color: #2e8b75;
+  }
+  .navbar {
+    background-color: #8b2e52;
+    display: flex;
+    flex-direction: column;
+  }
+  .navLinks {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+  }
+
+  .actions {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .actions .action {
+    display: none;
+  }
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

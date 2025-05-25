@@ -1,0 +1,51 @@
+/* src/styles/global.css */
+/* @import "./variables.css"; */
+
+body {
+  margin: 0;
+  font-family: var(--font-family-sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-unit);
+  padding-right: var(--spacing-unit);
+}
+
+/* Basic Button Resets/Styling (can be overridden by Button component) */
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    color 0.15s ease-in-out;
+}

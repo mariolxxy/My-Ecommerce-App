@@ -1,0 +1,152 @@
+.Hero {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 16px;
+  margin: 50px 6%;
+  align-items: stretch;
+}
+
+.HeroLeft {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.HeroLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.HeroRight {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.HeroRightSub {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  position: relative;
+}
+
+.flowePot {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.flowePot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.Lamp {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.Plates {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.Lamp img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.Plates img {
+  width: 100%;
+  position: relative;
+  height: auto;
+  display: block;
+}
+.HeroLeft h3 {
+  font-size: 40px;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+}
+.textOverlay2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+}
+.textOverlay h2 {
+  color: #2dc071;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.textOverlay h3 {
+  color: #252b42;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+.textOverlay h4 {
+  color: #252b42;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+.textOverlay p {
+  color: #252b42;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .Hero {
+    grid-template-columns: 1fr;
+    margin: 20px 5%;
+  }
+
+  .HeroLeft {
+    height: 288px;
+  }
+  .HeroRight {
+    height: auto;
+  }
+  .HeroLeft img {
+    height: auto;
+    object-fit: contain;
+  }
+  .flowePot img {
+    height: 288px;
+  }
+  .HeroRight {
+    gap: 12px;
+    padding-top: 10px;
+  }
+
+  .HeroRightSub {
+    flex-direction: column;
+  }
+}

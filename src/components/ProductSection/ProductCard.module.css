@@ -1,0 +1,74 @@
+.productSection {
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  margin: 0 6%;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(183px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #fff;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #252b42;
+}
+
+.cardDept {
+  font-size: 12px;
+  color: #737373;
+}
+
+.cardPrices {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 5px;
+}
+
+.newPrice {
+  color: #2dc071;
+  font-weight: bold;
+}
+
+.loadMore {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: 1px solid #23a6f0;
+  background-color: #fff;
+  color: #23a6f0;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loadMore:hover {
+  background-color: #23a6f0;
+  color: #fff;
+}
