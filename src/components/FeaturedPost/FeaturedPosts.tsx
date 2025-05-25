@@ -17,7 +17,7 @@ const postsData: Post[] = [
   },
   {
     id: "2",
-    imageUrl: "./Images/PostCard4.png",
+    imageUrl: "./Images/post4.png",
     imageAlt: "Bright kitchen with white cabinets and a wooden island",
     tags: ["Google", "Trending", "New"],
     title: "Loudest à la Madison #1 (L'integral)",
